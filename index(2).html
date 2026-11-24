@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07110b">
+<meta name="description" content="TermLauncher — Android terminal launcher with Termux repository support.">
+<title>TermLauncher — Android Terminal Launcher</title>
+<style>
+:root{color-scheme:dark;--bg:#07110b;--panel:#0d1911;--line:#1b3825;--green:#65ff91;--muted:#a6b9aa;--white:#effff2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#174526 0,transparent 48%),var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}
+.wrap{width:min(100% - 36px,920px);margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:24px 0}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.3px}.mark{width:38px;height:38px;border:1px solid #2c7543;border-radius:12px;display:grid;place-items:center;color:var(--green);background:#102819;font-size:20px}.version{border:1px solid #285638;color:var(--green);background:#102819;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700}
+.hero{text-align:center;padding:62px 0 52px}.eyebrow{color:var(--green);font-size:12px;font-weight:800;letter-spacing:2.4px;text-transform:uppercase}.hero h1{font-size:clamp(42px,9vw,76px);line-height:1.02;letter-spacing:-3px;margin:18px 0 16px}.hero h1 span{color:var(--green)}.lead{max-width:590px;margin:0 auto;color:var(--muted);font-size:17px;line-height:1.7}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:30px 0 14px}.download{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:#06100a;text-decoration:none;font-weight:900;padding:16px 25px;border-radius:13px;box-shadow:0 8px 30px #65ff9128;transition:.2s}.download:hover{transform:translateY(-2px);box-shadow:0 12px 34px #65ff9140}.small{font-size:12px;color:#819889}
+.terminal{max-width:640px;margin:44px auto 0;text-align:left;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#08120b;box-shadow:0 24px 70px #0008}.termbar{display:flex;align-items:center;gap:7px;padding:13px 16px;border-bottom:1px solid var(--line);color:#90a897;font-size:12px}.dot{width:8px;height:8px;border-radius:50%;background:#315a3b}.termcontent{padding:20px 22px;color:#b5d8bf;font:13px/2 ui-monospace,SFMono-Regular,Consolas,monospace}.prompt{color:var(--green)}.cursor{display:inline-block;width:7px;height:14px;background:var(--green);vertical-align:-2px;animation:blink 1s steps(2,start) infinite}@keyframes blink{to{visibility:hidden}}
+section{padding:34px 0 58px}.section-head{text-align:center;margin-bottom:24px}.section-head h2{font-size:28px;margin:0 0 9px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.feature{padding:21px;border:1px solid var(--line);background:linear-gradient(145deg,#102017,#0a140d);border-radius:16px}.ico{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#153321;color:var(--green);font-size:19px;margin-bottom:15px}.feature h3{font-size:16px;margin:0 0 8px}.feature p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}
+.bottom{text-align:center;border-top:1px solid var(--line);padding:24px 0 34px;color:#718778;font-size:12px}
+@media(max-width:560px){.hero{padding:48px 0 38px}.hero h1{letter-spacing:-2px}.lead{font-size:15px}.grid{grid-template-columns:1fr}.feature{padding:18px}.top{padding:18px 0}}
+</style>
+</head>
+<body>
+<header class="wrap top"><div class="brand"><div class="mark">⌘</div><span>TermLauncher</span></div><span class="version">VERSION 2.5</span></header>
+<main>
+<div class="wrap hero">
+<div class="eyebrow">Android terminal launcher</div>
+<h1>Take control.<br><span>Stay in terminal.</span></h1>
+<p class="lead">A terminal-inspired Android launcher experience with Termux repository support, app access, and useful customization options.</p>
+<div class="actions"><a class="download" href="https://github.com/Rollano/TermLauncher/releases/download/2.5/app-debug.apk"><span aria-hidden="true">↓</span> DOWNLOAD APK</a></div>
+<div class="small">TermLauncher v2.5 · Android APK</div>
+<div class="terminal" aria-label="Terminal preview"><div class="termbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span style="margin-left:8px">termlauncher — session</span></div><div class="termcontent"><div><span class="prompt">user@android</span>:~$ termlauncher</div><div>Starting terminal environment...</div><div>Termux repository support: <span class="prompt">ready</span></div><div><span class="prompt">user@android</span>:~$ <span class="cursor"></span></div></div></div>
+</div>
+<section class="wrap"><div class="section-head"><h2>Explore the features</h2><p>Tools and interface highlights in TermLauncher.</p></div>
+<div class="grid">
+<article class="feature"><div class="ico">⌨</div><h3>Built-in Terminal</h3><p>Terminal-style command interface for a focused Android workflow.</p></article>
+<article class="feature"><div class="ico">▣</div><h3>Termux Integration</h3><p>Connect with Termux and its package environment.</p></article>
+<article class="feature"><div class="ico">⌕</div><h3>App Drawer &amp; Search</h3><p>Browse installed apps and find what you need quickly.</p></article>
+<article class="feature"><div class="ico">⚙</div><h3>Customization</h3><p>Personalize the launcher appearance with available theme options.</p></article>
+<article class="feature"><div class="ico">⌁</div><h3>Root &amp; ADB Tools</h3><p>Convenient access to supported root and ADB helper functions.</p></article>
+<article class="feature"><div class="ico">▤</div><h3>Desktop-style UI</h3><p>A terminal-inspired layout with launcher-style navigation.</p></article>
+</div></section>
+</main>
+<footer class="bottom"><div class="wrap">© 2026 TermLauncher · Android terminal launcher</div></footer>
+</body>
+</html>
